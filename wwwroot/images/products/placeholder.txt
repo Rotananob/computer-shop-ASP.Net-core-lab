@@ -1,0 +1,20 @@
+Computer Shop Product Images
+
+This folder is intended for product images.
+
+Sample product image files referenced in the application:
+- asus-rog.jpg
+- lenovo-legion.jpg
+- dell-xps.jpg
+- hp-pavilion.jpg
+- nzxt-builder.jpg
+- lg-4k-monitor.jpg
+- dell-24-monitor.jpg
+- logitech-mx-master.jpg
+- corsair-keyboard.jpg
+- intel-i9.jpg
+- nvidia-4090.jpg
+- corsair-ram.jpg
+
+Note: Real product images should be added to this folder.
+The application will display placeholder paths until actual images are provided.
