@@ -1,0 +1,39 @@
+@model Customer
+
+@{
+    ViewData["Title"] = "Customer Details";
+}
+
+<div class="container mt-5">
+    <h1>@Model.FirstName @Model.LastName</h1>
+    
+    <div class="card">
+        <div class="card-body">
+            <p><strong>Email:</strong> @Model.Email</p>
+            <p><strong>Phone:</strong> @Model.Phone</p>
+            <p><strong>Address:</strong> @Model.Address</p>
+            <h5 class="mt-3">Orders:</h5>
+            @if (Model.Orders.Any())
+            {
+                <ul class="list-group">
+                    @foreach (var order in Model.Orders)
+                    {
+                        <li class="list-group-item">
+                            Order #@order.Id - @order.OrderDate.ToString("MMM dd, yyyy") - $@order.TotalAmount.ToString("F2")
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p class="text-muted">No orders found.</p>
+            }
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <a asp-controller="Customers" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+        <a asp-controller="Customers" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+        <a asp-controller="Customers" asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>

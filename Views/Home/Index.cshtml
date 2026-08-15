@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="my-5">
+    <div class="jumbotron bg-light p-5 rounded">
+        <h1 class="display-4">Welcome to Computer Shop</h1>
+        <p class="lead">Your one-stop shop for all computer hardware and accessories</p>
+        <hr class="my-4">
+        <p>Explore our selection of laptops, desktops, monitors, peripherals, and components.</p>
+        <a class="btn btn-primary btn-lg" asp-controller="Products" asp-action="Index" role="button">
+            Browse Products
+        </a>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">📦 Products</h5>
+                    <p class="card-text">Explore our wide range of computer hardware</p>
+                    <a asp-controller="Products" asp-action="Index" class="btn btn-outline-primary">View Products</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">📂 Categories</h5>
+                    <p class="card-text">Browse products by category</p>
+                    <a asp-controller="Categories" asp-action="Index" class="btn btn-outline-primary">View Categories</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">👥 Customers</h5>
+                    <p class="card-text">Manage customer information</p>
+                    <a asp-controller="Customers" asp-action="Index" class="btn btn-outline-primary">View Customers</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">🛒 Orders</h5>
+                    <p class="card-text">Track and manage orders</p>
+                    <a asp-controller="Orders" asp-action="Index" class="btn btn-outline-primary">View Orders</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 p-4 bg-light rounded">
+        <h3>About This Project</h3>
+        <p>This Computer Shop application is built using:</p>
+        <ul>
+            <li><strong>Framework:</strong> ASP.NET Core MVC</li>
+            <li><strong>.NET Version:</strong> .NET 8</li>
+            <li><strong>Database:</strong> PostgreSQL</li>
+            <li><strong>ORM:</strong> Entity Framework Core</li>
+            <li><strong>Provider:</strong> Npgsql</li>
+        </ul>
+        <p>The application demonstrates fundamental concepts of E-Commerce development including models, relationships, CRUD operations, and data seeding.</p>
+    </div>
+</div>

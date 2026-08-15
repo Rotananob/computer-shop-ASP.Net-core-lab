@@ -1,0 +1,46 @@
+@model List<Customer>
+
+@{
+    ViewData["Title"] = "Customers";
+}
+
+<div class="container mt-5">
+    <h1>@ViewData["Title"]</h1>
+    
+    <div class="mb-3">
+        <a asp-controller="Customers" asp-action="Create" class="btn btn-primary">Add New Customer</a>
+    </div>
+
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var customer in Model)
+            {
+                <tr>
+                    <td>@customer.FirstName</td>
+                    <td>@customer.LastName</td>
+                    <td>@customer.Email</td>
+                    <td>@customer.Phone</td>
+                    <td>
+                        <a asp-controller="Customers" asp-action="Details" asp-route-id="@customer.Id" class="btn btn-sm btn-info">Details</a>
+                        <a asp-controller="Customers" asp-action="Edit" asp-route-id="@customer.Id" class="btn btn-sm btn-warning">Edit</a>
+                        <a asp-controller="Customers" asp-action="Delete" asp-route-id="@customer.Id" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @if (Model.Count == 0)
+    {
+        <p class="text-muted">No customers available.</p>
+    }
+</div>
