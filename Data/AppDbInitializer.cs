@@ -61,7 +61,7 @@ namespace Computer_shop.Data
                             Description = "High-performance gaming laptop with RTX 4060",
                             Price = 1299.99m,
                             Stock = 15,
-                            ImagePath = "/images/products/asus-rog.jpg",
+                            ImagePath = "/images/products/laptops/asus-rog.jpg",
                             CategoryId = 1  // Laptops
                         },
                         new Product()
@@ -70,7 +70,7 @@ namespace Computer_shop.Data
                             Description = "Business laptop with Intel Core i7 and 16GB RAM",
                             Price = 899.99m,
                             Stock = 20,
-                            ImagePath = "/images/products/lenovo-legion.jpg",
+                            ImagePath = "/images/products/laptops/lenovo-legion.jpg",
                             CategoryId = 1  // Laptops
                         },
                         new Product()
@@ -79,7 +79,7 @@ namespace Computer_shop.Data
                             Description = "Premium laptop for professionals and creators",
                             Price = 1599.99m,
                             Stock = 10,
-                            ImagePath = "/images/products/dell-xps.jpg",
+                            ImagePath = "/images/products/laptops/dell-xps.jpg",
                             CategoryId = 1  // Laptops
                         },
                         new Product()
@@ -88,7 +88,7 @@ namespace Computer_shop.Data
                             Description = "Affordable desktop for everyday computing",
                             Price = 599.99m,
                             Stock = 25,
-                            ImagePath = "/images/products/hp-pavilion.jpg",
+                            ImagePath = "/images/products/desktops/hp-pavilion.jpg",
                             CategoryId = 2  // Desktops
                         },
                         new Product()
@@ -97,7 +97,7 @@ namespace Computer_shop.Data
                             Description = "Pre-built gaming desktop with RTX 4070",
                             Price = 1799.99m,
                             Stock = 12,
-                            ImagePath = "/images/products/nzxt-builder.jpg",
+                            ImagePath = "/images/products/desktops/nzxt-builder.jpg",
                             CategoryId = 2  // Desktops
                         },
                         new Product()
@@ -106,7 +106,7 @@ namespace Computer_shop.Data
                             Description = "27-inch 4K IPS monitor for professional work",
                             Price = 399.99m,
                             Stock = 30,
-                            ImagePath = "/images/products/lg-4k-monitor.jpg",
+                            ImagePath = "/images/products/monitors/lg-4k-monitor.jpg",
                             CategoryId = 3  // Monitors
                         },
                         new Product()
@@ -115,7 +115,7 @@ namespace Computer_shop.Data
                             Description = "24-inch Full HD monitor, great for office work",
                             Price = 199.99m,
                             Stock = 40,
-                            ImagePath = "/images/products/dell-24-monitor.jpg",
+                            ImagePath = "/images/products/monitors/dell-24-monitor.jpg",
                             CategoryId = 3  // Monitors
                         },
                         new Product()
@@ -124,7 +124,7 @@ namespace Computer_shop.Data
                             Description = "Advanced wireless mouse for productivity",
                             Price = 99.99m,
                             Stock = 50,
-                            ImagePath = "/images/products/logitech-mx-master.jpg",
+                            ImagePath = "/images/products/peripherals/logitech-mx-master.jpg",
                             CategoryId = 4  // Peripherals
                         },
                         new Product()
@@ -133,7 +133,7 @@ namespace Computer_shop.Data
                             Description = "Premium mechanical keyboard with RGB lighting",
                             Price = 199.99m,
                             Stock = 35,
-                            ImagePath = "/images/products/corsair-keyboard.jpg",
+                            ImagePath = "/images/products/peripherals/corsair-keyboard.jpg",
                             CategoryId = 4  // Peripherals
                         },
                         new Product()
@@ -142,7 +142,7 @@ namespace Computer_shop.Data
                             Description = "Latest generation high-end CPU",
                             Price = 699.99m,
                             Stock = 8,
-                            ImagePath = "/images/products/intel-i9.jpg",
+                            ImagePath = "/images/products/components/intel-i9.jpg",
                             CategoryId = 5  // Components
                         },
                         new Product()
@@ -151,7 +151,7 @@ namespace Computer_shop.Data
                             Description = "Flagship graphics card for extreme performance",
                             Price = 1599.99m,
                             Stock = 5,
-                            ImagePath = "/images/products/nvidia-4090.jpg",
+                            ImagePath = "/images/products/components/nvidia-4090.jpg",
                             CategoryId = 5  // Components
                         },
                         new Product()
@@ -160,7 +160,7 @@ namespace Computer_shop.Data
                             Description = "High-speed DDR5 memory kit (2x16GB)",
                             Price = 249.99m,
                             Stock = 22,
-                            ImagePath = "/images/products/corsair-ram.jpg",
+                            ImagePath = "/images/products/components/corsair-ram.jpg",
                             CategoryId = 5  // Components
                         }
                     };
