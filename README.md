@@ -391,6 +391,6 @@ This project is for educational purposes as part of a university E-Commerce lab 
 
 ---
 
-**Created:** 2024  
+**Created:** 2026  
 **University Assignment:** E-Commerce with ASP.NET Core MVC  
 **Repository:** https://github.com/Rotananob/computer-shop-ASP.Net-core-lab
